@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Arze Brand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .product-card:hover .quick-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <!-- Navigation content from index.html -->
+    </nav>
+
+    <!-- Product Listing -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+            <h1 class="text-2xl font-bold text-gray-900">All Products</h1>
+            <div class="mt-4 md:mt-0 flex items-center">
+                <span class="mr-2 text-sm text-gray-600">Sort by:</span>
+                <select class="border rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                    <option>Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 product-card">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-center object-cover">
+                    <div class="quick-view absolute inset-0 flex items-center justify-center opacity-0 transform translate-y-2 transition-all duration-300">
+                        <button class="bg-white text-gray-900 py-2 px-4 rounded-full font-medium text-sm hover:bg-gray-100">Quick View</button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-900">
+                                <a href="#">Premium Cotton T-Shirt</a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Black</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">$29.99</p>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="ml-2 text-xs text-gray-500">(24 reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 product-card">
+                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-t-lg">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="w-full h-full object-center object-cover">
+                    <div class="quick-view absolute inset-0 flex items-center justify-center opacity-0 transform translate-y-2 transition-all duration-300">
+                        <button class="bg-white text-gray-900 py-2 px-4 rounded-full font-medium text-sm hover:bg-gray-100">Quick View</button>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-900">
+                                <a href="#">Slim Fit Jeans</a>
+                            </h3>
+                            <p class="mt-1 text-sm text-gray-500">Dark Blue</p>
+                        </div>
+                        <p class="text-sm font-medium text-gray-900">$59.99</p>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-xs text-gray-500">(18 reviews)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional product cards would go here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <a href="#" class="px-3 py-1 rounded-md bg-indigo-600 text-white font-medium">1</a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">2</a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">3</a>
+                <a href="#" class="px-3 py-1 rounded-md text-gray-700 hover:bg-gray-100">Next</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Footer content from index.html -->
+    </footer>
+</body>
+</html>
