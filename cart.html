@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | Arze Brand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .cart-item:hover {
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <!-- Navigation content from index.html -->
+    </nav>
+
+    <!-- Shopping Cart -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-2xl font-bold text-gray-900 mb-8">Shopping Cart</h1>
+        
+        <div class="lg:grid lg:grid-cols-12 lg:gap-x-12">
+            <!-- Cart Items -->
+            <div class="lg:col-span-8">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <!-- Cart Header -->
+                    <div class="hidden md:grid grid-cols-12 bg-gray-50 px-6 py-3 text-sm font-medium text-gray-500">
+                        <div class="col-span-6">Product</div>
+                        <div class="col-span-2 text-center">Price</div>
+                        <div class="col-span-2 text-center">Quantity</div>
+                        <div class="col-span-2 text-right">Total</div>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item border-t border-gray-200 px-6 py-4 transition-colors duration-150">
+                        <div class="flex flex-col md:grid md:grid-cols-12 gap-4">
+                            <div class="md:col-span-6 flex items-center">
+                                <div class="flex-shrink-0 h-20 w-20 overflow-hidden rounded-md">
+                                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="h-full w-full object-cover">
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-sm font-medium text-gray-900">
+                                        <a href="product-detail.html">Premium Cotton T-Shirt</a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Black</p>
+                                    <p class="mt-1 text-sm text-gray-500">Size: M</p>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 flex items-center md:justify-center">
+                                <p class="text-sm text-gray-900">$29.99</p>
+                            </div>
+                            <div class="md:col-span-2 flex items-center md:justify-center">
+                                <div class="flex items-center border rounded-md">
+                                    <button class="px-2 py-1 text-gray-600 hover:bg-gray-100">-</button>
+                                    <span class="px-2 py-1">1</span>
+                                    <button class="px-2 py-1 text-gray-600 hover:bg-gray-100">+</button>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 flex items-center justify-end">
+                                <p class="text-sm font-medium text-gray-900">$29.99</p>
+                                <button class="ml-4 text-gray-400 hover:text-gray-500">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item border-t border-gray-200 px-6 py-4 transition-colors duration-150">
+                        <div class="flex flex-col md:grid md:grid-cols-12 gap-4">
+                            <div class="md:col-span-6 flex items-center">
+                                <div class="flex-shrink-0 h-20 w-20 overflow-hidden rounded-md">
+                                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" class="h-full w-full object-cover">
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-sm font-medium text-gray-900">
+                                        <a href="product-detail.html">Slim Fit Jeans</a>
+                                    </h3>
+                                    <p class="mt-1 text-sm text-gray-500">Dark Blue</p>
+                                    <p class="mt-1 text-sm text-gray-500">Size: 32</p>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 flex items-center md:justify-center">
+                                <p class="text-sm text-gray-900">$59.99</p>
+                            </div>
+                            <div class="md:col-span-2 flex items-center md:justify-center">
+                                <div class="flex items-center border rounded-md">
+                                    <button class="px-2 py-1 text-gray-600 hover:bg-gray-100">-</button>
+                                    <span class="px-2 py-1">1</span>
+                                    <button class="px-2 py-1 text-gray-600 hover:bg-gray-100">+</button>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 flex items-center justify-end">
+                                <p class="text-sm font-medium text-gray-900">$59.99</p>
+                                <button class="ml-4 text-gray-400 hover:text-gray-500">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Actions -->
+                    <div class="border-t border-gray-200 px-6 py-4">
+                        <div class="flex justify-between">
+                            <button class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                Continue Shopping
+                            </button>
+                            <button class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                Update Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="mt-8 lg:mt-0 lg:col-span-4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-lg font-medium text-gray-900 mb-4">Order Summary</h2>
+                    
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Subtotal</span>
+                            <span class="text-sm font-medium text-gray-900">$89.98</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Shipping</span>
+                            <span class="text-sm font-medium text-gray-900">$5.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-sm text-gray-600">Tax</span>
+                            <span class="text-sm font-medium text-gray-900">$7.20</span>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4 flex justify-between">
+                            <span class="text-base font-medium text-gray-900">Total</span>
+                            <span class="text-base font-medium text-gray-900">$102.18</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <button class="w-full bg-indigo-600 border border-transparent rounded-md py-3 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Checkout
+                        </button>
+                    </div>
+
+                    <div class="mt-6 flex justify-center text-sm text-center text-gray-500">
+                        <p>
+                            or
+                            <a href="products.html" class="ml-1 text-indigo-600 font-medium hover:text-indigo-500">
+                                Continue Shopping
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white">
+        <!-- Footer content from index.html -->
+    </footer>
+</body>
+</html>
